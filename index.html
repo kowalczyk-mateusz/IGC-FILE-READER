@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <title>IGC READER</title>
+    <script src='script.js' defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-container"></div>
+    <label>Wprowadź link do pliku ICG by zobaczyc szczegóły lotu</label>
+    <input class='icgFile'/><button class='ReadFile'>Read Data</button>
+    <div class='content'>
+    <div class='text'>
+    <p class='pilot-name'></p>
+    <p class='glider-type'></p>
+    <p class='flight-date'></p>
+    <p class='start-flight'></p>
+    <p class='end-flight'></p>
+    <p class='flight-time'></p>
+    <p class='flight-length'></p>
+    <p class='flight-speed'></p>
+    <p class='min-height'></p>
+    <p class='max-height'></p>
+    <p class='flight-distance'></p>
+</div>
+    <div id='map'></div>
+</div>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm4VWEl3U-QQcB56ZFhsZUWQajps-bCeU&callback=initMap&libraries=&v=weekly"
+    async
+  ></script>
+</body>
+</html>
+

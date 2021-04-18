@@ -1,0 +1,53 @@
+body, *, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#map {
+    width: 100%;
+    height: 60vh;
+  }
+
+  body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+.input-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 2rem;
+    text-align: center;
+}
+input{
+    margin: 1rem;
+    padding: 0.33rem;
+    border-radius: 0.33rem;
+    border: 1px solid black;
+}
+button{
+    padding: 0.33rem;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+
+}
+@media (min-width:1000px){
+    .content{
+        flex-direction: row;
+    }
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-right: 1rem;
+}
